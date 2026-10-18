@@ -86,11 +86,17 @@ Use **Cursor** as the initial development environment. Avoid adding extra tools 
 - PR-driven incremental updates, with periodic checks as backup.
 - Token efficiency measured alongside correctness.
 
+## Frontend (starting point)
+
+The first interface is a **dark-mode Vite + React + TypeScript** app in `frontend/`. It is built for developers: repository dashboard, scoped chat with evidence chips, and visual quick-reference maps. Data is mocked until GitHub auth, indexing, and SurrealDB are wired.
+
+See `frontend/README.md` for the UI plan, routes, and next slices.
+
 ## Not decided yet
 
 The following details remain open and should be chosen during implementation rather than treated as settled decisions:
 
-- Exact frontend/backend framework and hosting setup.
+- Exact backend framework and hosting setup.
 - How GitHub authentication and organization/team permissions will be implemented.
 - Which language/repository to support first for code indexing.
 - Exact schema for findings, diagrams, PR events, and cached answers.
